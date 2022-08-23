@@ -1,0 +1,144 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+  background-color: #f6f5f0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  border-bottom: solid 1px #000;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 132px;
+  top: 0;
+}
+header > .inner {
+  height: 120px;
+  display: block;
+}
+header .main {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+header .main .logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 auto;
+}
+header .main .login {
+  padding: 2px 7px;
+  border: 1.5px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+header .main_menu {
+  width: 100%;
+  height: 40px;
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+}
+header .main_menu ul.menu {
+  display: flex;
+}
+header .main_menu ul.menu li {
+  padding: 8px 0;
+  text-align: center;
+  width: 220px;
+}
+header .main_menu ul.menu > li > a {
+  font-size: 15px;
+}
+header .main_menu ul.menu > li > a:hover {
+  font-weight: 700;
+}
+header .main_menu ul.menu > li > ul {
+  display: none;
+}
+header .main_menu ul.menu > li:hover > ul {
+  position: relative;
+  margin-top: 16px;
+  display: block;
+  background-color: #f6f5f0;
+  border: 1.5px solid #333;
+  border-radius: 3px;
+  z-index: 9;
+}
+header .main_menu ul.menu > li > ul > li {
+  margin-top: 2px;
+}
+header .main_menu ul.menu > li > ul > li > a {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
+header .main_menu ul.menu > li > ul > li > a:hover {
+  font-weight: 600;
+}
+
+/* 메인화면 */
+.main_page {
+  height: 400px;
+  position: relative;
+  margin-top: 30px;
+}
+.main_page .text {
+  position: absolute;
+  font-size: 35px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.main_page .txt2 {
+  padding: 0 0 0 30px;
+}
+.main_page .txt3 {
+  padding: 0 0 0 60px;
+}
+
+/* 메인화면 총학생회 */
+.association {
+  height: 400px;
+}
+
+/* 메인화면 공지사항 */
+.notice {
+  height: 400px;
+}
+
+/* 메인화면 캘린더 */
+.calendar {
+  height: 400px;
+}
+
+/* 메인화면 캘린더 */
+.suggestion {
+  height: 400px;
+}
+
+/* 메인화면 캘린더 */
+.interview {
+  height: 400px;
+}
