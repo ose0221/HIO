@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
 
     <!-- swiper -->
     <link
@@ -28,6 +32,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css" />
+
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
 
   <body>
@@ -36,7 +43,7 @@
         <div class="main">
           <div class="logo"><a href="/"> HOLD IN ONE </a></div>
           <div class="login">
-            <a href="javascript:void(0)" class="btn">login</a>
+            <div id="btn_login">login</div>
           </div>
         </div>
 
@@ -75,28 +82,89 @@
       </div>
     </header>
 
-    <!-- 메인화면 -->
-    <div class="main_page">
-      <div class="text">
-        <div class="txt1">Live, but live your own life.</div>
-        <div class="txt2">Think, but think for yourself.</div>
-        <div class="txt3">Learn, but learn your own lesson.</div>
+    <!-- 로그인 모달 -->
+    <div id="modal" class="modal_overlay">
+      <div class="modal_window">
+        <div class="modal">
+          <div class="modal_title">HIO</div>
+          <div class="close_area">X</div>
+        </div>
+        <div class="content">
+          <div class="logbox">
+            <input type="text" name="logid" id="logid" placeholder="아이디" />
+            <input
+              type="password"
+              name="logpwd"
+              id="logpwd"
+              placeholder="비밀번호"
+            />
+          </div>
+          <div class="log_btn">로그인</div>
+          <div class="text">회원가입</div>
+        </div>
       </div>
+    </div>
 
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+    <!-- 메인화면 -->
+    <div class="main__page">
+      <div class="inner">
+        <div class="image">
+          <div class="main__text">
+            <img src="./images/text.png" width="600px" alt="" />
+          </div>
+          <div class="main__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/sample.jpg" width="600px" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/sample2.jpg" width="600px" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/sample3.png" width="600px" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/sample4.jpg" width="600px" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-prev">
+              <span class="material-icons">arrow_back_ios</span>
+            </div>
+            <div class="swiper-next">
+              <span class="material-icons">arrow_forward_ios</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 메인화면 총학생회 -->
-    <div class="association">
+    <div class="council">
       <div class="inner">
         <div class="title">총학생회</div>
+        <div class="council__items">
+          <div class="council__item1">
+            <img src="./images/sample.jpg" width="300px" alt="" />
+            <div class="council__explain">
+              <div class="council__ex1">
+                <a href="#">총학생회 소개</a>
+                <p>오늘을 열다, 내일을 피우다</p>
+                <p>-제 38대 총학생회 개화-</p>
+              </div>
+            </div>
+          </div>
+          <div class="council__item2">
+            <div class="council__explain">
+              <div class="council__ex2">총학생회의 주도하에 진행되는</div>
+              <div class="council__ex2">중앙운영위원회 회의록입니다.</div>
+              <a href="#">중앙운영위원회 회의록</a>
+            </div>
+            <img src="./images/sample4.jpg" width="300px" alt="" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -104,6 +172,19 @@
     <div class="notice">
       <div class="inner">
         <div class="title">공지사항</div>
+        <div class="notice__btn">
+          <a href="#" class="notice__event">학생회 주관 이벤트</a>
+          <a href="#" class="notice__info">제휴정보</a>
+        </div>
+        <div class="notice__img">
+          <img src="./images/sample5.png" alt="" class="notice__1" />
+          </div>
+          <div class="notice__img2">
+            <img src="./images/sample5.png" alt="" class="notice__2" />
+            <img src="./images/sample5.png" alt="" class="notice__3" />
+          </div>
+        </div>
+        <div class="notice__for">only for duksung univ. by studentcouncil</div>
       </div>
     </div>
 
@@ -111,6 +192,13 @@
     <div class="calendar">
       <div class="inner">
         <div class="title">캘린더</div>
+        <a href="#" class="calendar__btn">개화시기</a>
+        <div class="calendar__img">
+          <img src="./images/sample5.png" width= "270px" alt="" class="calendar__1">
+          <img src="./images/sample5.png" width= "270px"alt="" class="calendar__2">
+          <img src="./images/sample5.png" width= "270px"alt="" class="calendar__3">
+        </div>
+        <a href="#" class="calendar__btn2">학사 일정 보기</a>
       </div>
     </div>
 
@@ -118,6 +206,16 @@
     <div class="suggestion">
       <div class="inner">
         <div class="title">건의사항</div>
+        <a href="#" class="suggestion__btn">학생 의견 수렴</a>
+        <div class="suggestion__img">
+          <img src="./images/sample3.png" width="350px" class="suggestion__1" alt="">
+          <div class="suggestion__txt">
+            <p>학교의 발전을 위해</p>
+            <p>무엇이든 편하게 얘기해주세요</p>
+            <p>언제나 귀 기울여 듣겠습니다</p>
+          </div>
+        </div>
+        <a href="#" class="suggestion__btn2">click here</a>
       </div>
     </div>
 
@@ -125,6 +223,15 @@
     <div class="interview">
       <div class="inner">
         <div class="title">동기화</div>
+        <a href="#" class="interview_btn">동문을 기록하고 후배들이 화응하다</a>
+        <div class="interview__img">
+          <div class="interview__img1">
+            <img src="./images/sample2.jpg" width="400px" class="interview__1" alt="">
+            <img src="./images/sample4.jpg" width="400px" class="interview__2" alt="">
+          </div>
+          <span class="material-icons">expand_more</span>
+          <img src="./images/sample.jpg" width="450" class="interview__youtube" alt="">
+        </div>
       </div>
     </div>
   </body>

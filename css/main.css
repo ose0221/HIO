@@ -97,48 +97,344 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   font-weight: 600;
 }
 
-/* 메인화면 */
-.main_page {
-  height: 400px;
+/* 로그인 모달 */
+#modal {
   position: relative;
-  margin-top: 30px;
+  display: none;
+  z-index: 11;
 }
-.main_page .text {
+#modal .modal_overlay {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  font-size: 35px;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
 }
-.main_page .txt2 {
-  padding: 0 0 0 30px;
+#modal .modal_window {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.31);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
 }
-.main_page .txt3 {
-  padding: 0 0 0 60px;
+#modal .modal {
+  display: flex;
+  align-items: center;
+}
+#modal .modal_title {
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+#modal .close_area {
+  cursor: pointer;
+  padding-bottom: 40px;
+  padding-right: 5px;
+}
+#modal .content {
+  display: block;
+}
+
+#modal .content .logbox {
+  text-align: center;
+}
+#modal .content #logid {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#modal .content #logpwd {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#modal .content .log_btn {
+  text-align: center;
+  background-color: #884259;
+  width: 250px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 10px;
+}
+#modal .content .text {
+  font-size: 7px;
+  text-align: center;
+  margin: 13px;
+}
+
+/* 메인화면 */
+.main__page {
+  height: 800px;
+  position: relative;
+  margin-top: 50px;
+}
+.main__page > .inner {
+  height: 100%;
+}
+.main__page .image {
+  height: 100%;
+}
+.main__page .main__text {
+  text-align: center;
+}
+.main__page .main__swiper {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.main__page .swiper {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+}
+.main__page .swiper-pagination {
+  bottom: 70px;
+}
+.main__page .swiper-pagination .swiper-pagination-bullet {
+  background-color: #884259;
+}
+.main__page .swiper-prev {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 450px;
+  right: 850px;
+  z-index: 1;
+  cursor: pointer;
+}
+.main__page .swiper-next {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 450px;
+  right: 190px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* 메인화면 총학생회 */
-.association {
-  height: 400px;
+.council {
+  height: 800px;
+  position: relative;
+}
+.council .council__items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 80px;
+}
+.council .council__items .council__item1 > img {
+  margin: 30px;
+}
+.council .council__items .council__item1 .council__explain {
+  width: 300px;
+  height: 224px;
+  margin: 30px;
+}
+.council .council__items .council__item1 .council__explain .council__ex1 {
+  justify-content: center;
+}
+.council .council__items .council__item2 > img {
+  margin: 30px;
+}
+.council .council__items .council__item2 .council__explain {
+  width: 300px;
+  height: 224px;
+  margin: 30px;
+}
+.council .council__items .council__item2 .council__explain .council__ex2 {
+  justify-content: center;
 }
 
 /* 메인화면 공지사항 */
 .notice {
-  height: 400px;
+  height: 800px;
+}
+.notice .notice__btn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  padding: 20px;
+}
+.notice .notice__btn .notice__event {
+  padding-right: 20px;
+}
+.notice .notice__btn .notice__info {
+  padding: 0 20px;
+}
+.notice .notice__img {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 50px 0;
+}
+.notice .notice__img .notice__1 {
+  transform: rotate(45deg);
+}
+.notice .notice__img2 {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 130px 0;
+}
+.notice .notice__img2 .notice__2 {
+  transform: rotate(45deg);
+  margin: 40px;
+  padding: 10px 10px 0 0;
+}
+.notice .notice__img2 .notice__3 {
+  transform: rotate(45deg);
+  margin: 40px;
+  padding: 0 0 10px 10px;
+}
+.notice .notice__for {
+  text-align: center;
+  margin-top: 600px;
 }
 
 /* 메인화면 캘린더 */
 .calendar {
-  height: 400px;
+  height: 750px;
+}
+.calendar .calendar__btn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  padding: 20px 40px;
+}
+.calendar .calendar__img {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 40px 0;
+}
+.calendar .calendar__img .calendar__1,
+.calendar .calendar__img .calendar__2,
+.calendar .calendar__img .calendar__3 {
+  margin: 0 30px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+.calendar .calendar__btn2 {
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 550px;
 }
 
 /* 메인화면 캘린더 */
 .suggestion {
-  height: 400px;
+  height: 750px;
+}
+.suggestion .suggestion__btn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  padding: 20px 40px;
+}
+.suggestion .suggestion__img {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.suggestion .suggestion__img .suggestion__txt {
+  width: 350px;
+  text-align: center;
+}
+.suggestion .suggestion__btn2 {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #000;
+  border-radius: 30px;
+  margin-top: 500px;
+  font-size: 22px;
+  color: #fff;
+  padding: 15px 40px;
 }
 
 /* 메인화면 캘린더 */
 .interview {
-  height: 400px;
+  height: 1300px;
+}
+.interview .interview_btn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  padding: 20px 40px;
+}
+.interview .interview__img {
+}
+
+.interview .interview__img .interview__img1 {
+  margin-top: 100px;
+  text-align: center;
+  display: block;
+}
+.interview .interview__img .interview__1 {
+  position: absolute;
+  display: flex;
+  top: 150px;
+  left: 200px;
+  z-index: 1;
+}
+.interview .interview__img .interview__2 {
+  position: absolute;
+  display: flex;
+  top: 300px;
+  right: 200px;
+}
+.interview .interview__img > .material-icons {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 500px;
+}
+.interview .interview__img .interview__youtube {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: 210px;
 }
