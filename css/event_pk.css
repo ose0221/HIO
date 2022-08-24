@@ -183,25 +183,25 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 .title {
   position: relative;
 }
-.title .stdcouncil__menu {
+.title .notice__menu {
   position: absolute;
   display: flex;
   width: 100%;
   margin: 30px;
   padding-top: 30px;
 }
-.title .stdcouncil__menu .stdcouncil__intro {
+.title .notice__menu .notice__event {
   display: flex;
   margin-right: 40px;
+  cursor: pointer;
+}
+.title .notice__menu .notice__event:hover {
+  font-weight: 800;
+}
+.title .notice__menu .notice__partner {
+  display: flex;
   cursor: pointer;
   font-weight: 800;
   padding-bottom: 3px;
   border-bottom: solid 1.5px #000;
-}
-.title .stdcouncil__menu .stdcouncil__board {
-  display: flex;
-  cursor: pointer;
-}
-.title .stdcouncil__menu .stdcouncil__board:hover {
-  font-weight: 800;
 }
