@@ -1,5 +1,5 @@
 body {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -43,6 +43,7 @@ header .main .logo {
   font-weight: 600;
   color: #000;
   margin: 0 auto;
+  font-family: "Aboreto", cursive;
 }
 header .main .login {
   padding: 2px 7px;
@@ -198,7 +199,10 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   height: 100%;
 }
 .main__page .main__text {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
   text-align: center;
+  padding: 30px;
 }
 .main__page .main__swiper {
   display: flex;
@@ -326,8 +330,11 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   padding: 0 0 10px 10px;
 }
 .notice .notice__for {
+  font-family: "Aboreto", cursive;
   text-align: center;
-  margin-top: 600px;
+  margin-top: 630px;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 /* 메인화면 캘린더 */

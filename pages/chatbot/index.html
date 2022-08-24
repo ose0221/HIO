@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+
+    <link rel="stylesheet" href="/css/chatbot.css" />
+    <script defer src="/js/chatbot.js"></script>
+  </head>
+
+  <body>
+    <div class="chatheader">
+      <table width="100%">
+        <tr>
+          <td width="50%" align="left">덕성여자대학교</td>
+          <td width="50%" align="right">
+            <span onclick="chatTrain()" style="cursor: pointer">Train</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="chatbody" id="chatbox"></div>
+    <div class="chatfooter">
+      <table width="100%">
+        <tr>
+          <td width="85%" align="left">
+            <input type="text" id="chattext" class="chattext" />
+          </td>
+          <td width="15%" align="right">
+            <button class="sendbtn" onclick="sendAsk()">SEND</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

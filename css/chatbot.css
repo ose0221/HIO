@@ -1,0 +1,38 @@
+body {
+  height: 100%;
+  background-color: #bbccdd;
+}
+.chatheader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
+}
+.chatbody {
+  height: 450px;
+  margin-top: 60px;
+  background-color: #bbccdd;
+}
+.chatfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+.chatfooter .chattext {
+  padding: 10px 0;
+  width: 100%;
+  border: solid 0px #000;
+}
+.chatfooter .sendbtn {
+  padding: 10px 0;
+  width: 100%;
+}
