@@ -188,7 +188,6 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   display: flex;
   width: 100%;
   margin: 30px;
-  padding-top: 30px;
 }
 .title .interview_menu .interview__ {
   display: flex;
@@ -199,10 +198,24 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   border-bottom: solid 1.5px #000;
 }
 .title .content {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
 }
 .title .content .content__img {
 }
 .title .content .content__ {
+  margin-top: 80px;
+}
+.title .content .content__ .v1 {
+  border-left: 2px solid #000;
+  height: 80px;
+  position: relative;
+  left: 50%;
+}
+.title .content .content__ p {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .title .content .content__ .line {
   border-left: thick sold #000;
@@ -211,4 +224,49 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   position: absolute;
 }
 .title .content .content__duk {
+  margin-top: 50px;
+}
+
+.title .content p {
+  margin-top: 50px;
+}
+
+.title .content .arrow_down {
+  margin-top: 50px;
+}
+.title .content .arrow_down i {
+  font-size: 3em;
+  font-weight: thin;
+}
+.title .content a img {
+  width: 500px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+.title .content .content__duk .contents__img {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.title .content .content__duk .contents__img .youtube__1,
+.title .content .content__duk .contents__img .youtube__2,
+.title .content .content__duk .contents__img .youtube__3 {
+  margin: 0 30px;
+  overflow: hidden;
+  height: 135px;
+  border-radius: 135px 135px 0 0;
+}
+
+.title .content .content__duk .contents_text span {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-bottom: 80px;
 }

@@ -188,7 +188,6 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   display: flex;
   width: 100%;
   margin: 30px;
-  padding-top: 30px;
 }
 .title .stdcouncil__menu .stdcouncil__intro {
   display: flex;
@@ -204,4 +203,64 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 }
 .title .stdcouncil__menu .stdcouncil__board:hover {
   font-weight: 800;
+}
+
+/* 게시판 */
+.stdcouncil__note {
+  margin-top: 150px;
+  text-align: center;
+}
+.board-table {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid #a1a1a1;
+  font-size: 13px;
+  padding: 10px;
+}
+.board-table th {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #a1a1a1;
+}
+.board-table .th-num {
+  width: 80px;
+}
+.board-table .th-title {
+  width: 400px;
+}
+.board-table .th-writer {
+  width: 100px;
+}
+.board-table .th-num {
+  width: 100px;
+}
+.board-table .th-date {
+  width: 200px;
+}
+.board-table td {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.stdcouncil__note .write__btn {
+  margin: 10px;
+  border: 0.5px solid #333;
+  border-radius: 4px;
+  float: right;
+  margin-right: 110px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.stdcouncil__note .pagination {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  margin-top: 230px;
+}
+.stdcouncil__note .pagination > li {
+  padding: 3px;
+  font-size: 13px;
 }

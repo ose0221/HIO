@@ -188,7 +188,6 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   display: flex;
   width: 100%;
   margin: 30px;
-  padding-top: 30px;
 }
 .title .stdcouncil__menu .stdcouncil__intro {
   display: flex;
@@ -204,4 +203,43 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 }
 .title .stdcouncil__menu .stdcouncil__board:hover {
   font-weight: 800;
+}
+
+/* 개화 소개 */
+.stdcouncil__items {
+  position: relative;
+  width: 100%;
+  height: 1500px;
+}
+.stdcouncil__items .text {
+  text-align: center;
+  padding: 150px 0 70px 0;
+  font-size: 30px;
+}
+.stdcouncil__items .intro__box {
+  width: 100%;
+  height: 1000px;
+  border: solid 1px #333;
+}
+.stdcouncil__items .intro__box .people {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+.stdcouncil__items .intro__box .person1 {
+  margin-right: 100px;
+  text-align: center;
+}
+.stdcouncil__items .intro__box .person2 {
+  margin-left: 100px;
+  text-align: center;
+}
+.stdcouncil__items .intro__box .stucouncil__text {
+  text-align: center;
+  margin-top: 550px;
+}
+.stdcouncil__items .intro__box .logo {
+  text-align: center;
+  margin: 80px;
 }
