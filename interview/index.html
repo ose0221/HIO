@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIO</title>
+
+    <!-- reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="../css/interview.css" />
+
+    <script defer src="./js/modal.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="main">
+          <div class="logo"><a href="/"> HOLD IN ONE </a></div>
+          <div class="login">
+            <div id="btn_login">login</div>
+          </div>
+        </div>
+
+        <div class="main_menu">
+          <ul class="menu">
+            <li>
+              <a href="/council">총학생회</a>
+              <ul>
+                <li><a href="javascript:void(0)">총학생회 소개</a></li>
+                <li>
+                  <a href="javascript:void(0)">중앙운영위원회 회의록 정리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/notice/">공지사항</a>
+              <ul>
+                <li><a href="javascript:void(0)">학생회 주관 이벤트</a></li>
+                <li><a href="javascript:void(0)">제휴 정보</a></li>
+              </ul>
+            </li>
+            <li><a href="/calendar">캘린더</a></li>
+            <li><a href="/suggestion">건의사항</a></li>
+            <li>
+              <a href="/interview">인터뷰</a>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">글로벌융합대학</a>
+                </li>
+                <li><a href="javascript:void(0)">과학기술대학</a></li>
+                <li><a href="javascript:void(0)">아트앤디자인대학</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- 로그인 모달 -->
+    <div id="modal" class="modal_overlay">
+      <div class="modal_window">
+        <div class="modal">
+          <div class="modal_title">HIO</div>
+          <div class="close_area">X</div>
+        </div>
+        <div class="content">
+          <div class="logbox">
+            <input type="text" name="logid" id="logid" placeholder="아이디" />
+            <input
+              type="password"
+              name="logpwd"
+              id="logpwd"
+              placeholder="비밀번호"
+            />
+          </div>
+          <div class="log_btn">로그인</div>
+          <div class="text">회원가입</div>
+        </div>
+      </div>
+    </div>
+
+    인터뷰
+  </body>
+</html>
