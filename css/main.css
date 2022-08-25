@@ -447,7 +447,8 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  margin-top: 210px;
+  margin-top: 300px;
+  width: 800px;
 }
 
 /* footer */
