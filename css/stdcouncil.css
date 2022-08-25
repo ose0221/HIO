@@ -189,6 +189,7 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   display: flex;
   width: 100%;
   margin: 30px;
+  z-index: 1;
 }
 .title .stdcouncil__menu .stdcouncil__intro {
   display: flex;
@@ -204,7 +205,6 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 }
 .title .stdcouncil__menu .stdcouncil__board:hover {
   font-weight: 800;
-  cursor: pointer;
 }
 
 /* 개화 소개 */

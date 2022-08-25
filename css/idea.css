@@ -10,7 +10,6 @@ a {
   text-decoration: none;
   color: #333;
 }
-
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -199,9 +198,30 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   border-bottom: solid 1.5px #000;
 }
 
+.post {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+.post > .inner {
+  height: 100%;
+}
+.post .post__wrapper {
+  width: 100%;
+  height: 1000px;
+  border: solid 1.5px #333;
+}
+.post .post__wrapper .tellme {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
 /* footer */
 footer {
   width: 100%;
   height: 70px;
   text-align: center;
+  margin-top: 100px;
 }
