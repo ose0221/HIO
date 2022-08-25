@@ -20,12 +20,11 @@ header .main .logo {
   margin: 0 auto;
   font-family: "Aboreto", cursive;
 }
-header .main .login {
+header .main #btn_login {
   padding: 2px 7px;
   border: 1.5px solid #333;
   border-radius: 4px;
   cursor: pointer;
-  box-sizing: border-box;
   margin-top: 40px;
 }
 header .main_menu {

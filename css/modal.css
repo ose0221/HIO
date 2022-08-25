@@ -1,9 +1,9 @@
 #logmodal {
-  position: absolute;
+  position: fixed;
   float: middle;
   width: 100%;
   display: none;
-  z-index: 12;
+  z-index: 20;
 }
 #logmodal .logmodal_overlay {
   width: 100%;
@@ -15,15 +15,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #f6f5f0;
   box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 4px;
 }
 #logmodal .logmodal_window {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #f6f5f0;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.31);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
@@ -45,7 +43,7 @@
   font-size: 20px;
   font-weight: 700;
 }
-#logmodal .log_close_area {
+#logmodal #log_close_area {
   cursor: pointer;
   padding-bottom: 40px;
   padding-right: 5px;
@@ -80,7 +78,7 @@
   color: #fff;
   margin-top: 10px;
 }
-#logmodal .logmodal_content .btn_join {
+#logmodal .logmodal_content #btn_join {
   font-size: 7px;
   text-align: center;
   margin: 13px;
@@ -88,11 +86,11 @@
 }
 
 #joinmodal {
-  position: absolute;
+  position: fixed;
   float: middle;
   width: 100%;
   display: none;
-  z-index: 11;
+  z-index: 20;
 }
 #joinmodal .joinmodal_overlay {
   width: 100%;
@@ -104,18 +102,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #f6f5f0;
   box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 4px;
 }
 #joinmodal .joinmodal_window {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #f6f5f0;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.31);
-  backdrop-filter: blur(13.5px);
-  -webkit-backdrop-filter: blur(13.5px);
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   width: 300px;
@@ -134,7 +128,7 @@
   font-size: 20px;
   font-weight: 700;
 }
-#joinmodal .join_close_area {
+#joinmodal #join_close_area {
   cursor: pointer;
   padding-bottom: 40px;
   padding-right: 5px;
