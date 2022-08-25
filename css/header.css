@@ -1,0 +1,73 @@
+/* HEADER */
+header {
+  width: 100%;
+  top: 0;
+}
+header > .inner {
+  height: 150px;
+  display: block;
+}
+header .main {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+header .main .logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 auto;
+  font-family: "Aboreto", cursive;
+}
+header .main .login {
+  padding: 2px 7px;
+  border: 1.5px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+header .main_menu {
+  width: 100%;
+  height: 40px;
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+}
+header .main_menu ul.menu {
+  display: flex;
+}
+header .main_menu ul.menu li {
+  padding: 8px 0;
+  text-align: center;
+  width: 220px;
+}
+header .main_menu ul.menu > li > a {
+  font-size: 15px;
+}
+header .main_menu ul.menu > li > a:hover {
+  font-weight: 700;
+}
+header .main_menu ul.menu > li > ul {
+  display: none;
+}
+header .main_menu ul.menu > li:hover > ul {
+  position: relative;
+  margin-top: 16px;
+  display: block;
+  background-color: #f6f5f0;
+  border: 1.5px solid #333;
+  border-radius: 3px;
+  z-index: 9;
+}
+header .main_menu ul.menu > li > ul > li {
+  margin-top: 2px;
+}
+header .main_menu ul.menu > li > ul > li > a {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
+header .main_menu ul.menu > li > ul > li > a:hover {
+  font-weight: 600;
+}

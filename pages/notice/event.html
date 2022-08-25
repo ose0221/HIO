@@ -24,75 +24,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link rel="stylesheet" href="../../css/event.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script defer src="./js/modal.js"></script>
+    <link rel="stylesheet" href="../../css/event.css" />
+    <script src="/js/includeHeader.js"></script>
+    <script src="/js/includeFooter.js"></script>
   </head>
   <body>
-    <header>
-      <div class="inner">
-        <div class="main">
-          <div class="logo"><a href="/"> HOLD IN ONE </a></div>
-          <div class="login">
-            <div id="btn_login">login</div>
-          </div>
-        </div>
-
-        <div class="main_menu">
-          <ul class="menu">
-            <li>
-              <a href="/pages/stdcouncil/">총학생회</a>
-              <ul>
-                <li><a href="/pages/stdcouncil/">총학생회 소개</a></li>
-                <li>
-                  <a href="/pages/stdcouncil/board.html"
-                    >중앙운영위원회 회의록 정리</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/pages/notice/event.html">공지사항</a>
-              <ul>
-                <li>
-                  <a href="/pages/notice/event.html">학생회 주관 이벤트</a>
-                </li>
-                <li><a href="/pages/notice/partnership.html">제휴 정보</a></li>
-              </ul>
-            </li>
-            <li><a href="/pages/calendar/">캘린더</a></li>
-            <li><a href="/pages/idea/">건의사항</a></li>
-            <li>
-              <a href="/pages/interview/">인터뷰</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- 로그인 모달 -->
-    <div id="modal" class="modal_overlay">
-      <div class="modal_window">
-        <div class="modal">
-          <div class="modal_title">HIO</div>
-          <div class="close_area">X</div>
-        </div>
-        <div class="content">
-          <div class="logbox">
-            <input type="text" name="logid" id="logid" placeholder="아이디" />
-            <input
-              type="password"
-              name="logpwd"
-              id="logpwd"
-              placeholder="비밀번호"
-            />
-          </div>
-          <div class="log_btn">로그인</div>
-          <div class="text">회원가입</div>
-        </div>
-      </div>
-    </div>
-
+    <header id="header"></header>
     <!-- 메뉴 -->
     <div class="title">
       <div class="inner">
@@ -145,12 +84,6 @@
         </div>
       </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="inner">
-        <div class="footer_info">© All Rights reserved</div>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>

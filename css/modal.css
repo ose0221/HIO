@@ -1,0 +1,170 @@
+#logmodal {
+  position: absolute;
+
+  display: none;
+  z-index: 11;
+}
+#logmodal .logmodal_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+}
+#logmodal .logmodal_window {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.31);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+#logmodal .logmodal_ {
+  display: flex;
+  align-items: center;
+}
+#logmodal .logmodal_title {
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+#logmodal .log_close_area {
+  cursor: pointer;
+  padding-bottom: 40px;
+  padding-right: 5px;
+}
+#logmodal .logmodal_content {
+  display: block;
+}
+#logmodal .logmodal_content .logbox {
+  text-align: center;
+}
+#logmodal .logmodal_content #logid {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#logmodal .logmodal_content #logpwd {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#logmodal .logmodal_content .log_btn {
+  text-align: center;
+  background-color: #884259;
+  width: 250px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 10px;
+}
+#logmodal .logmodal_content .btn_join {
+  font-size: 7px;
+  text-align: center;
+  margin: 13px;
+  cursor: pointer;
+}
+
+#joinmodal {
+  position: absolute;
+  float: middle;
+  width: 100%;
+  display: none;
+  z-index: 11;
+}
+#joinmodal .joinmodal_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+}
+#joinmodal .joinmodal_window {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.31);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+#joinmodal .joinmodal_ {
+  display: flex;
+  align-items: center;
+}
+#joinmodal .joinmodal_title {
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+#joinmodal .join_close_area {
+  cursor: pointer;
+  padding-bottom: 40px;
+  padding-right: 5px;
+}
+#joinmodal .joinmodal_content {
+  display: block;
+}
+#joinmodal .joinmodal_content .joinbox {
+  text-align: center;
+}
+#joinmodal .joinmodal_content #joinid {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#joinmodal .joinmodal_content #joinpwd {
+  margin: 5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+#joinmodal .joinmodal_content .join_btn {
+  text-align: center;
+  background-color: #884259;
+  width: 250px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 10px;
+}

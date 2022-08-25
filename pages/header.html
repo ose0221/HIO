@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="/css/modal.css" />
+<link rel="stylesheet" href="/css/header.css" />
+<script defer src="/js/modal.js"></script>
+
+<header>
+  <div class="inner">
+    <div class="main">
+      <div class="logo"><a href="/"> HOLD IN ONE </a></div>
+      <div class="login">
+        <div id="btn_login">login</div>
+      </div>
+    </div>
+
+    <div class="main_menu">
+      <ul class="menu">
+        <li>
+          <a href="/pages/stdcouncil/">총학생회</a>
+          <ul>
+            <li><a href="/pages/stdcouncil/">총학생회 소개</a></li>
+            <li>
+              <a href="/pages/stdcouncil/board.html"
+                >중앙운영위원회 회의록 정리</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/pages/notice/event.html">공지사항</a>
+          <ul>
+            <li>
+              <a href="/pages/notice/event.html">학생회 주관 이벤트</a>
+            </li>
+            <li><a href="/pages/notice/partnership.html">제휴 정보</a></li>
+          </ul>
+        </li>
+        <li><a href="/pages/calendar/">캘린더</a></li>
+        <li><a href="/pages/idea/">건의사항</a></li>
+        <li>
+          <a href="/pages/interview/">인터뷰</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 로그인 모달 -->
+  <div id="logmodal" class="logmodal_overlay">
+    <div class="logmodal_window">
+      <div class="logmodal_">
+        <div class="logmodal_title">HIO</div>
+        <div class="log_close_area">X</div>
+      </div>
+      <div class="logmodal_content">
+        <div class="logbox">
+          <input type="text" name="logid" id="logid" placeholder="아이디" />
+          <input
+            type="password"
+            name="logpwd"
+            id="logpwd"
+            placeholder="비밀번호"
+          />
+        </div>
+        <div class="log_btn">로그인</div>
+        <div class="btn_join">회원가입</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 회원가입 모달 -->
+  <div id="joinmodal" class="joinmodal_overlay">
+    <div class="joinmodal_window">
+      <div class="joinmodal_">
+        <div class="joinmodal_title">HIO</div>
+        <div class="join_close_area">X</div>
+      </div>
+      <div class="joinmodal_content">
+        <div class="joinbox">
+          <input type="text" name="joinid" id="joinid" placeholder="아이디" />
+          <input
+            type="password"
+            name="joinpwd"
+            id="joinpwd"
+            placeholder="비밀번호"
+          />
+        </div>
+        <div class="join_btn">회원가입</div>
+      </div>
+    </div>
+  </div>
+</header>
