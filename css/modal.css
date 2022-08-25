@@ -1,8 +1,9 @@
 #logmodal {
   position: absolute;
-
+  float: middle;
+  width: 100%;
   display: none;
-  z-index: 11;
+  z-index: 12;
 }
 #logmodal .logmodal_overlay {
   width: 100%;
