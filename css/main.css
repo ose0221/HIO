@@ -255,11 +255,17 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 }
 .stdcouncil .stdcouncil__items .stdcouncil__item1 > img {
   margin: 30px;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 .stdcouncil .stdcouncil__items .stdcouncil__item1 .stdcouncil__explain {
   width: 300px;
   height: 224px;
   margin: 30px;
+}
+
+.stdcouncil .stdcouncil__items .stdcouncil__item1 .stdcouncil__explain a {
+  padding-bottom: 50px;
 }
 .stdcouncil
   .stdcouncil__items
@@ -270,18 +276,26 @@ header .main_menu ul.menu > li > ul > li > a:hover {
 }
 .stdcouncil .stdcouncil__items .stdcouncil__item2 > img {
   margin: 30px;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 .stdcouncil .stdcouncil__items .stdcouncil__item2 .stdcouncil__explain {
   width: 300px;
   height: 224px;
   margin: 30px;
 }
+
+.stdcouncil .stdcouncil__items .stdcouncil__item2 .stdcouncil__explain a {
+  margin-top: 50px;
+}
+
 .stdcouncil
   .stdcouncil__items
   .stdcouncil__item2
   .stdcouncil__explain
   .stdcouncil__ex2 {
   justify-content: center;
+  margin-top: 10px;
 }
 
 /* 메인화면 공지사항 */
@@ -317,7 +331,7 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  margin: 130px 0;
+  margin: 110px 0;
 }
 .notice .notice__img2 .notice__2 {
   transform: rotate(45deg);
@@ -372,7 +386,7 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   margin-top: 550px;
 }
 
-/* 메인화면 캘린더 */
+/* 메인화면 건의사항 */
 .idea {
   height: 750px;
 }
@@ -389,10 +403,25 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   left: 50%;
   transform: translate(-50%, 50%);
 }
+
+.idea .idea__img i {
+  font-size: 150px;
+  position: relative;
+  top: 70px;
+  left: -50px;
+
+}
 .idea .idea__img .idea__txt {
+  margin-top: 80px;
+  margin-left: 50px;
   width: 350px;
   text-align: center;
 }
+.idea .idea__img .idea__txt p {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
 .idea .idea__btn2 {
   position: absolute;
   display: flex;
@@ -401,13 +430,13 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   transform: translate(-50%, 50%);
   background-color: #000;
   border-radius: 30px;
-  margin-top: 500px;
+  margin-top: 520px;
   font-size: 22px;
   color: #fff;
   padding: 15px 40px;
 }
 
-/* 메인화면 캘린더 */
+/* 메인화면 동기화 */
 .interview {
   height: 1250px;
 }
@@ -422,6 +451,10 @@ header .main_menu ul.menu > li > ul > li > a:hover {
   text-align: center;
   display: block;
 }
+.interview .interview__img .interview__img1 img {
+  border-radius: 10%;
+}
+
 .interview .interview__img .interview__1 {
   position: absolute;
   display: flex;
